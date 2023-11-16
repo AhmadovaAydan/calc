@@ -12,7 +12,7 @@ button1.addEventListener("click", function () {
   let value1 = Number(num1.value);
   let value2 = Number(num2.value);
 
-  if (value1 == "" || value2 == "") {
+  if (isNaN(value1) || isNaN(value2)) {
     text.innerText = "Eded daxil edin";
   } else {
     numbers.push(value1, value2);
@@ -26,7 +26,7 @@ button2.addEventListener("click", function () {
   let value1 = Number(num1.value);
   let value2 = Number(num2.value);
 
-  if (value1 == "" || value2 == "") {
+  if (isNaN(value1) || isNaN(value2)) {
     text.innerText = "Eded daxil edin";
   } else {
     numbers.push(value1, value2);
@@ -40,7 +40,7 @@ button3.addEventListener("click", function () {
   let value1 = Number(num1.value);
   let value2 = Number(num2.value);
 
-  if (value1 == "" || value2 == "") {
+  if (isNaN(value1) || isNaN(value2)) {
     text.innerText = "Eded daxil edin";
   } else {
     numbers.push(value1, value2);
@@ -54,7 +54,7 @@ button4.addEventListener("click", function () {
   let value1 = Number(num1.value);
   let value2 = Number(num2.value);
 
-  if (value1 == "" || value2 == "") {
+  if (isNaN(value1) || isNaN(value2)) {
     text.innerText = "Eded daxil edin";
   } else {
     numbers.push(value1, value2);
@@ -66,6 +66,7 @@ button4.addEventListener("click", function () {
 });
 button5.addEventListener("click", function () {
   num1.value = "";
-  num2.valu2 = "";
+  num2.value = "";
   text.innerText = "Netice";
+  numbers = [];
 });
