@@ -13,31 +13,36 @@
     <title>Document</title>
   </head>
   <body class="m-5">
-    <div class="m-5">
+    <div class="m-5 w-50 bg-secondary border border-black">
       <div class="m-5">
-        <input id="num1" class="input1" type="number" placeholder="Number1" />
-        <input id="num2" class="input2" type="number" placeholder="Number2" />
+        <input
+          id="num1"
+          type="number"
+          class="input1 m-3"
+          placeholder="Number1"
+        />
+        <input id="num2" type="number" class="input2" placeholder="Number2" />
       </div>
       <div>
-        <button id="button1" type="button" class="btn btn-secondary">
+        <button id="button1" type="button" class="btn btn-warning m-3">
           Addition
         </button>
-        <button id="button2" type="button" class="btn btn-info">
+        <button id="button2" type="button" class="btn btn-info m-3">
           Subtraction
         </button>
-        <button id="button3" type="button" class="btn btn-danger">
+        <button id="button3" type="button" class="btn btn-danger m-3">
           Multiplication
         </button>
-        <button id="button4" type="button" class="btn btn-warning">
+        <button id="button4" type="button" class="btn btn-warning m-3">
           Division
         </button>
-        <button id="button5" type="button" class="btn btn-success">
+        <button id="button5" type="button" class="btn btn-success m-3">
           Clear
         </button>
       </div>
-    </div>
-    <h1 class="m-5" id="text">Nəticə</h1>
 
-    <script src="./index.js"></script>
+      <h1 class="m-2 text-center" id="text">Nəticə</h1>
+    </div>
+    <script src="./calc.js"></script>
   </body>
 </html>
